@@ -74,7 +74,7 @@
               <block type="oled_cleardisplay" id="158">
                 <next>
                   <block type="oled_drawtext" id="107">
-                    <field name="TEXT">Watch me!</field>
+                    <field name="TEXT">I will show you a trick</field>
                     <next>
                       <block type="oled_setcursor" id="199" inline="true">
                         <value name="STARTX">
@@ -91,14 +91,14 @@
                           <block type="robot_delay" id="109" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="116">
-                                <field name="NUM">1000</field>
+                                <field name="NUM">500</field>
                               </block>
                             </value>
                             <next>
                               <block type="oled_cleardisplay" id="157">
                                 <next>
                                   <block type="oled_drawtext" id="146">
-                                    <field name="TEXT">I will do a trick!</field>
+                                    <field name="TEXT">Hold me!</field>
                                     <next>
                                       <block type="oled_setcursor" id="229" inline="true">
                                         <value name="STARTX">
@@ -115,14 +115,14 @@
                                           <block type="robot_delay" id="147" inline="true">
                                             <value name="DELAY">
                                               <block type="math_number" id="148">
-                                                <field name="NUM">1000</field>
+                                                <field name="NUM">1500</field>
                                               </block>
                                             </value>
                                             <next>
                                               <block type="oled_cleardisplay" id="159">
                                                 <next>
                                                   <block type="oled_drawtext" id="160">
-                                                    <field name="TEXT">3</field>
+                                                    <field name="TEXT">in 3</field>
                                                     <next>
                                                       <block type="oled_setcursor" id="220" inline="true">
                                                         <value name="STARTX">
