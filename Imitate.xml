@@ -1,1 +1,10 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="led_select" id="9" inline="true" x="109" y="84">
+    <field name="ACTION">ON</field>
+    <value name="LED">
+      <block type="math_number" id="16">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+</xml>
