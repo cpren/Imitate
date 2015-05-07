@@ -1,10 +1,162 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="led_select" id="9" inline="true" x="109" y="84">
-    <field name="ACTION">ON</field>
-    <value name="LED">
-      <block type="math_number" id="16">
-        <field name="NUM">0</field>
+  <block type="variables_set" id="18" inline="true" x="69" y="12">
+    <field name="VAR">Variable</field>
+    <value name="VALUE">
+      <block type="math_number" id="25">
+        <field name="NUM">1</field>
       </block>
     </value>
+    <next>
+      <block type="controls_repeat" id="32" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="16">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="led_select" id="9" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="variables_get" id="66">
+                <field name="VAR">Variable</field>
+              </block>
+            </value>
+            <next>
+              <block type="robot_delay" id="43" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="50">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="led_select" id="41" inline="true">
+                    <field name="ACTION">OFF</field>
+                    <value name="LED">
+                      <block type="variables_get" id="70">
+                        <field name="VAR">Variable</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="74" inline="true">
+                        <field name="VAR">Variable</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="81" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="variables_get" id="98">
+                                <field name="VAR">Variable</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="88">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="oled_cleardisplay" id="158">
+            <next>
+              <block type="oled_drawtext" id="107">
+                <field name="TEXT">Watch me!</field>
+                <next>
+                  <block type="robot_delay" id="109" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="116">
+                        <field name="NUM">250</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_cleardisplay" id="157">
+                        <next>
+                          <block type="oled_drawtext" id="146">
+                            <field name="TEXT">I will do a trick!</field>
+                            <next>
+                              <block type="robot_delay" id="147" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="148">
+                                    <field name="NUM">250</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_cleardisplay" id="159">
+                                    <next>
+                                      <block type="oled_drawtext" id="160">
+                                        <field name="TEXT">3</field>
+                                        <next>
+                                          <block type="robot_delay" id="161" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="162">
+                                                <field name="NUM">250</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="oled_cleardisplay" id="163">
+                                                <next>
+                                                  <block type="oled_drawtext" id="164">
+                                                    <field name="TEXT">2</field>
+                                                    <next>
+                                                      <block type="robot_delay" id="165" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="166">
+                                                            <field name="NUM">250</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="movement_stutter" id="181">
+                                                            <next>
+                                                              <block type="oled_cleardisplay" id="167">
+                                                                <next>
+                                                                  <block type="oled_drawtext" id="168">
+                                                                    <field name="TEXT">You got trolled son!</field>
+                                                                    <next>
+                                                                      <block type="robot_delay" id="169" inline="true">
+                                                                        <value name="DELAY">
+                                                                          <block type="math_number" id="170">
+                                                                            <field name="NUM">5000</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
   </block>
 </xml>
