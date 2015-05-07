@@ -84,7 +84,7 @@
                         </value>
                         <value name="STARTY">
                           <block type="math_number" id="219">
-                            <field name="NUM">10</field>
+                            <field name="NUM">0</field>
                           </block>
                         </value>
                         <next>
@@ -192,6 +192,9 @@
                                                                                                     <field name="NUM">5000</field>
                                                                                                   </block>
                                                                                                 </value>
+                                                                                                <next>
+                                                                                                  <block type="movement_stop" id="267"></block>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
