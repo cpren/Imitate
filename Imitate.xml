@@ -172,7 +172,7 @@
                                                                                   <block type="oled_cleardisplay" id="167">
                                                                                     <next>
                                                                                       <block type="oled_drawtext" id="168">
-                                                                                        <field name="TEXT">You got trolled son!</field>
+                                                                                        <field name="TEXT">You got tricked son!</field>
                                                                                         <next>
                                                                                           <block type="oled_setcursor" id="226" inline="true">
                                                                                             <value name="STARTX">
