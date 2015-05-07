@@ -76,7 +76,7 @@
                   <block type="oled_cleardisplay" id="158">
                     <next>
                       <block type="oled_drawtext" id="107">
-                        <field name="TEXT">I will show you a trick</field>
+                        <field name="TEXT">I show you a trick</field>
                         <next>
                           <block type="oled_setcursor" id="199" inline="true">
                             <value name="STARTX">
@@ -229,7 +229,7 @@
                                                                                                       <block type="controls_repeat" id="397" inline="true">
                                                                                                         <value name="TIMES">
                                                                                                           <block type="math_number" id="398">
-                                                                                                            <field name="NUM">2</field>
+                                                                                                            <field name="NUM">5</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <statement name="DO">
